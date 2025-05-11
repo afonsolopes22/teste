@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinhas de Transporte para Turismo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Carrinhas de Turismo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção sobre os serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Os nossos serviços</h2>
+            <p>Oferecemos transporte confortável e seguro para grupos de turistas, seja para passeios turísticos, excursões ou transferes. As nossas carrinhas são modernas e equipadas para proporcionar uma experiência agradável durante todo o trajeto.</p>
+            <ul>
+                <li>Transporte de grupos</li>
+                <li>Excursões turísticas</li>
+                <li>Transferes para o aeroporto</li>
+                <li>Roteiros personalizados</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galeria de carrinhas -->
+    <section id="galeria">
+        <div class="container">
+            <h2>Galeria de Carrinhas</h2>
+            <div class="images">
+                <img src="van1.jpg" alt="Carrinha 1">
+                <img src="van2.jpg" alt="Carrinha 2">
+                <img src="van3.jpg" alt="Carrinha 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Para mais informações ou reservas, entre em contacto conosco:</p>
+            <form action="submit_form.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Carrinhas de Turismo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
