@@ -5,73 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinhas de Transporte para Turismo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
+    <div id="scroll-bar"></div>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>Carrinhas de Turismo</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        <h1>Carrinhas de Turismo</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <button id="toggle-darkmode" aria-label="Alternar modo escuro">🌙</button>
 
-    <!-- Seção sobre os serviços -->
-    <section id="servicos">
-        <div class="container">
-            <h2>Os nossos serviços</h2>
-            <p>Oferecemos transporte confortável e seguro para grupos de turistas, seja para passeios turísticos, excursões ou transferes. As nossas carrinhas são modernas e equipadas para proporcionar uma experiência agradável durante todo o trajeto.</p>
-            <ul>
-                <li>Transporte de grupos</li>
-                <li>Excursões turísticas</li>
-                <li>Transferes para o aeroporto</li>
-                <li>Roteiros personalizados</li>
-            </ul>
-        </div>
-    </section>
+</header>
 
-    <!-- Galeria de carrinhas -->
-    <section id="galeria">
-        <div class="container">
-            <h2>Galeria de Carrinhas</h2>
-            <div class="images">
-                <img src="van1.jpg" alt="Carrinha 1">
-                <img src="van2.jpg" alt="Carrinha 2">
-                <img src="van3.jpg" alt="Carrinha 3">
+<section id="servicos">
+    <div class="container">
+        <h2>Os nossos serviços</h2>
+        <p>Oferecemos transporte confortável e seguro para grupos de turistas, seja para passeios turísticos, excursões ou transferes. As nossas carrinhas são modernas e equipadas para proporcionar uma experiência agradável durante todo o trajeto.</p>
+
+        <div class="servicos-lista">
+            <div class="servico">
+                <img src="transporte.jpg" alt="Transporte de grupos">
+                <h3>Transporte de grupos</h3>
+            </div>
+            <div class="servico">
+                <img src="excursao.jpg" alt="Excursões turísticas">
+                <h3>Excursões turísticas</h3>
+            </div>
+            <div class="servico">
+                <img src="transfer.jpg" alt="Transferes para o aeroporto">
+                <h3>Transferes para o aeroporto</h3>
+            </div>
+            <div class="servico">
+                <img src="roteiro.jpg" alt="Roteiros personalizados">
+                <h3>Roteiros personalizados</h3>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Seção de contacto -->
-    <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>Para mais informações ou reservas, entre em contacto conosco:</p>
-            <form action="submit_form.php" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+<section id="galeria">
+    <div class="container">
+        <h2>Galeria de Carrinhas</h2>
+        <div class="images">
+            <img src="van1.jpg" alt="Carrinha 1">
+            <img src="van2.jpg" alt="Carrinha 2">
+            <img src="van3.jpg" alt="Carrinha 3">
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Carrinhas de Turismo. Todos os direitos reservados.</p>
-    </footer>
+<section id="contacto">
+    <div class="container">
+        <h2>Contacto</h2>
+        <p>Para mais informações ou reservas, entre em contacto conosco:</p>
+        <form action="submit_form.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+<section id="sobre">
+    <div class="container" data-aos="fade-up">
+      <h2>Sobre Nós</h2>
+      <p>A nossa missão é proporcionar experiências inesquecíveis, com conforto, segurança e autenticidade.</p>
+      <div class="equipa">
+        <div class="membro">
+          <img src="guia1.jpg" alt="Afonso Lopes">
+          <h3>Pedro Lopes</h3>
+          <p>Guia local apaixonado por história e paisagens naturais.</p>
+        </div>
+        <div class="membro">
+          <img src="guia2.jpg" alt="André Guimarães">
+          <h3>Ana Martins</h3>
+          <p>Especialista em roteiros culturais e enoturismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section id="experiencias">
+    <div class="container">
+        <h2>Experiências Temáticas</h2>
+        <div class="experiencias-grid">
+            <div class="experiencia-card">
+                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg" alt="Tour dos Vinhos">
+                <h3>Tour dos Vinhos</h3>
+                <p>Descubra quintas e caves com degustações de vinhos únicos da região.</p>
+                <a href="https://wa.me/351913287685?text=Olá!%20Gostaria%20de%20reservar%20a%20experiência%20Tour%20dos%20Vinhos." target="_blank">
+                    <button><i class="fab fa-whatsapp"></i> Reservar via WhatsApp</button>
+                </a>
+            </div>
+            <div class="experiencia-card">
+                <img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg" alt="Portugal Histórico">
+                <h3>Portugal Histórico</h3>
+                <p>Explore castelos, aldeias históricas e monumentos incríveis.</p>
+                <a href="https://wa.me/351913287685?text=Olá!%20Gostaria%20de%20reservar%20a%20experiência%20Portugal%20Histórico." target="_blank">
+                    <button><i class="fab fa-whatsapp"></i> Reservar via WhatsApp</button>
+                </a>
+            </div>
+            <div class="experiencia-card">
+                <img src="https://images.pexels.com/photos/1300626/pexels-photo-1300626.jpeg" alt="Aventura no Gerês">
+                <h3>Aventura no Gerês</h3>
+                <p>Trilhos, cascatas e natureza no coração do Parque Nacional.</p>
+                <a href="https://wa.me/351913287685?text=Olá!%20Gostaria%20de%20reservar%20a%20experiência%20Aventura%20no%20Gerês." target="_blank">
+                    <button><i class="fab fa-whatsapp"></i> Reservar via WhatsApp</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="servicos" data-aos="fade-up">
+    <section id="galeria" data-aos="fade-left">
+    <section id="contacto" data-aos="fade-right">
+    <section id="experiencias" data-aos="zoom-in">
+    
+
+<footer>
+    <p>&copy; 2025 Carrinhas de Turismo. Todos os direitos reservados.</p>
+</footer><script>
+    // Modo escuro com localStorage
+    const toggleBtn = document.getElementById("toggle-darkmode");
+
+    function aplicarModoGuardado() {
+        const modoGuardado = localStorage.getItem("modo");
+        if (modoGuardado === "escuro") {
+            document.body.classList.add("dark-mode");
+            toggleBtn.textContent = "☀️";
+        } else {
+            document.body.classList.remove("dark-mode");
+            toggleBtn.textContent = "🌙";
+        }
+    }
+
+    aplicarModoGuardado();
+
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const modoAtual = document.body.classList.contains("dark-mode") ? "escuro" : "claro";
+        localStorage.setItem("modo", modoAtual);
+        toggleBtn.textContent = modoAtual === "escuro" ? "☀️" : "🌙";
+    });
+
+    // Scroll progress bar
+    const scrollBar = document.getElementById("scroll-bar");
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        scrollBar.style.width = progress + "%";
+    });
+
+    // AOS init
+    AOS.init();
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
